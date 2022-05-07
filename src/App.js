@@ -5,9 +5,8 @@ import Routes from './routes'
 function App() {
   return (
     <div className="App">
-       <Routes exact path="/">
-          <Home />
-       </Routes>
+       <Routes />
+          
     </div>
   );
 }
