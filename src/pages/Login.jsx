@@ -3,6 +3,7 @@ import { ReactMic } from '@cleandersonlobo/react-mic';
 import { Link } from "react-router-dom";
 import ReactPlayer from 'react-player';
 import ReactAudioPlayer from 'react-audio-player';
+import './loginstyle.css'
 
 const Login = () => {
   const [record, setRecord] = useState(false)
@@ -53,6 +54,9 @@ useEffect(() => {
 
       <ReactPlayer 
       url='https://www.youtube.com/watch?v=IKydZtF9I3w'
+      width='350px'
+      height='197px'
+      style={{position: 'absolute', bottom: '20px', left: '20px'}}
       />
     </>
   );
