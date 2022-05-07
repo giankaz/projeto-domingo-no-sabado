@@ -3,15 +3,21 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import React from "react";
 import ProductPage from "../pages/productPage";
+import React from 'react'
+import { useHistory } from 'react-router-dom';
 
 export default function Routes() {
+
+  const history = useHistory();
+
+  const handleClick = () => {
+      history.push("/login")
+  }
+
   return (
     <Switch>
       <Route path="/register">
         <Register />
-      </Route>
-      <Route exact path="/">
-        <div>Home</div>
       </Route>
       <Route exact path="/login">
         <Login />
@@ -19,6 +25,10 @@ export default function Routes() {
       <Route path="/productPage">
         <ProductPage />
       </Route>
+        <Route exact path='/'>
+            <div>home</div>
+            <button onClick={handleClick}>Login</button>
+        </Route>
     </Switch>
   );
 }
