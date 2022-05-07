@@ -3,7 +3,6 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import React from "react";
 import ProductPage from "../pages/productPage";
-import React from 'react'
 import { useHistory } from 'react-router-dom';
 
 export default function Routes() {
