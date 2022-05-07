@@ -1,4 +1,5 @@
 import React          from 'react';
+import { Link } from 'react-router-dom';
 import { Container, FormStyles } from './styles';
 
 export default function Register({ authenticated, setAuthenticated }) {
@@ -44,7 +45,12 @@ export default function Register({ authenticated, setAuthenticated }) {
             placeholder='Digite seu nome' 
           />
         </label>
-        <button> Enviar </button>
+        <div>
+          <button> Enviar </button>
+          <Link to='/login'>
+            <button className='exit'>Cancelar</button>
+          </Link>
+        </div>
       </FormStyles>
     </Container>
   );

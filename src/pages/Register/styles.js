@@ -43,14 +43,25 @@ export const FormStyles = styled.form`
     padding: 10px;
     border-radius: 8px;
   }
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
 
   button {
     border: none;
     padding: 15px;
     border-radius: 8px;
     font-size: 1rem;
-    background-color: red;
+    background-color: green;
+    color: #fff;
     cursor: pointer;
+  }
+
+  .exit {
+    background-color: red;
   }
 
 `

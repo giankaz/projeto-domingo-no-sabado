@@ -5,7 +5,9 @@ const Login = () => {
   return (
     <>
       <h1>Login</h1>
-      <Link to="/register" />
+      <Link to="/register" >
+        Registre-se
+      </Link>
     </>
   );
 };
