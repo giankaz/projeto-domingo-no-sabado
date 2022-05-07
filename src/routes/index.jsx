@@ -1,3 +1,5 @@
+import React from "react";
+import { Cart } from "../pages/Carrinho";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Login from "../pages/Login";
 import ProductPage from "../pages/productPage";
@@ -15,19 +17,27 @@ export default function Routes() {
   return (
     <Switch>
 
+      <Route exact path="/carrinho">
+        <Cart />
+      </Route>
+
       <Route path="/register">
         <Register />
       </Route>
+
       <Route exact path="/login">
         <Login />
       </Route>
+
       <Route path="/productPage">
         <ProductPage />
       </Route>
-        <Route exact path='/'>
-            <div>home</div>
-            <button onClick={handleClick}>Login</button>
-        </Route>
+
+      <Route exact path='/'>
+        <div>home</div>
+        <button onClick={handleClick}>Login</button>
+      </Route>
+
     </Switch>
   );
 }
