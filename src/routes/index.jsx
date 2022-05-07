@@ -1,9 +1,9 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
-import React from "react";
 import ProductPage from "../pages/productPage";
 import { useHistory } from 'react-router-dom';
+import Register from "../pages/Register";
+
 
 export default function Routes() {
 
@@ -15,6 +15,7 @@ export default function Routes() {
 
   return (
     <Switch>
+
       <Route path="/register">
         <Register />
       </Route>
