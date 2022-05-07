@@ -1,7 +1,6 @@
 import { Route, Switch, useHistory } from "react-router-dom";
 import Login from "../pages/Login";
 import ProductPage from "../pages/productPage";
-import { useHistory } from 'react-router-dom';
 import Register from "../pages/Register";
 
 
