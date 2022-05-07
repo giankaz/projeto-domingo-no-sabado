@@ -1,5 +1,5 @@
-import React from 'react';
-import { FormStyles } from './styles';
+import React          from 'react';
+import { Container, FormStyles } from './styles';
 
 export default function Register({ authenticated, setAuthenticated }) {
 
@@ -8,27 +8,44 @@ export default function Register({ authenticated, setAuthenticated }) {
   // });
 
   return (
-    <>
+    <Container>
 
       <FormStyles>
+        <h1> Cadastre-se </h1>
         <label> 
           Nome
-          <input type="text" name="name" placeholder='Digite seu nome' />
+          <input 
+            type="text" 
+            name="name"   
+            placeholder='Digite seu nome' 
+          />
         </label>
         <label> 
           Email
-          <input type="text" name="name" placeholder='Digite seu nome' />
+          <input 
+            type="text" 
+            name="email" 
+            placeholder='Digite seu email' 
+          />
         </label>
         <label> 
-          Nome
-          <input type="text" name="name" placeholder='Digite seu nome' />
+          Senha
+          <input 
+            type="password" 
+            name="password" 
+            placeholder='Digite seu nome' 
+          />
         </label>
         <label> 
-          Nome
-          <input type="text" name="name" placeholder='Digite seu nome' />
+          Confirme a senha
+          <input 
+            type="password" 
+            name="confirmPassword" 
+            placeholder='Digite seu nome' 
+          />
         </label>
+        <button> Enviar </button>
       </FormStyles>
-
-    </>
+    </Container>
   );
 };
