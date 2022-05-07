@@ -6,7 +6,7 @@ import Register from '../pages/Register'
 export default function Routes() {
   return (
     <Switch>
-        <Route exact path='/'>
+        <Route exact path='/' >
             <div>home</div>
         </Route>
         <Route path='/register'>
